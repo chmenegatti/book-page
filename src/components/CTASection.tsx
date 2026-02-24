@@ -37,7 +37,7 @@ const CTASection = () => {
 
           <div>
             <a
-              href="https://www.uiclap.com/"
+              href="https://loja.uiclap.com/titulo/ua154446/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-accent text-accent-foreground px-10 py-5 rounded-2xl font-bold text-xl hover:opacity-90 transition-all shadow-xl shadow-accent/40 animate-pulse-glow"
