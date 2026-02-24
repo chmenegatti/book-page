@@ -30,6 +30,7 @@ jobs:
           repository: chmenegatti/chmenegatti.github.io
           token: ${{ secrets.DEPLOY_TOKEN }}
           path: main-site
+          ref: gh-pages
 
       - name: Copy build to subfolder
         run: |
@@ -44,4 +45,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add go-na-pratica/
           git commit -m "deploy: update go-na-pratica" || echo "Nothing to commit"
-          git push
+          git push origin gh-pages
