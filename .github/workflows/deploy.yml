@@ -1,0 +1,47 @@
+name: Deploy go-na-pratica
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout book-page
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build
+        run: bun run build
+
+      - name: Checkout chmenegatti.github.io
+        uses: actions/checkout@v4
+        with:
+          repository: chmenegatti/chmenegatti.github.io
+          token: ${{ secrets.DEPLOY_TOKEN }}
+          path: main-site
+
+      - name: Copy build to subfolder
+        run: |
+          rm -rf main-site/go-na-pratica
+          mkdir -p main-site/go-na-pratica
+          cp -r dist/* main-site/go-na-pratica/
+
+      - name: Commit and push
+        run: |
+          cd main-site
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add go-na-pratica/
+          git commit -m "deploy: update go-na-pratica" || echo "Nothing to commit"
+          git push
