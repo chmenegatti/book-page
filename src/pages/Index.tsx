@@ -5,6 +5,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import TableOfContents from "@/components/TableOfContents";
 import StatsSection from "@/components/StatsSection";
 import AuthorSection from "@/components/AuthorSection";
+import MotivationSection from "@/components/MotivationSection";
 import CodePreview from "@/components/CodePreview";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -19,6 +20,7 @@ const Index = () => {
       <TableOfContents />
       <StatsSection />
       <AuthorSection />
+      <MotivationSection />
       <CodePreview />
       <CTASection />
       <Footer />
