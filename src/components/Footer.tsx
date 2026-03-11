@@ -1,4 +1,7 @@
 const Footer = () => {
+  const amazonLink =
+    "https://www.amazon.com.br/Go-Pr%C3%A1tica-Cap%C3%ADtulos-Dominar-Linguagem-ebook/dp/B0GQDC58N9/ref=sr_1_1?crid=363BEXSOAQRWU&dib=eyJ2IjoiMSJ9.H8NR6SKxnFk4cUAoh3Qt6di7HZQ6FPCSEWiCNYRDZn_GjHj071QN20LucGBJIEps.H1PeFbD6xXe1tb_oc_ZVKKYk9aLUQ-aZB9CauaQvWHU&dib_tag=se&keywords=go+na+pratica&qid=1773256378&sprefix=%2Caps%2C200&sr=8-1";
+
   return (
     <footer className="section-dark py-12 border-t border-primary/10">
       <div className="container mx-auto px-4 md:px-6">
@@ -21,7 +24,15 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-primary-foreground/50 hover:text-primary transition-colors"
             >
-              Comprar
+              Comprar na UICLAP
+            </a>
+            <a
+              href={amazonLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-foreground/50 hover:text-primary transition-colors"
+            >
+              Comprar na Amazon
             </a>
           </nav>
 

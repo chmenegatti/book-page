@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
+const AMAZON_LINK =
+  "https://www.amazon.com.br/Go-Pr%C3%A1tica-Cap%C3%ADtulos-Dominar-Linguagem-ebook/dp/B0GQDC58N9/ref=sr_1_1?crid=363BEXSOAQRWU&dib=eyJ2IjoiMSJ9.H8NR6SKxnFk4cUAoh3Qt6di7HZQ6FPCSEWiCNYRDZn_GjHj071QN20LucGBJIEps.H1PeFbD6xXe1tb_oc_ZVKKYk9aLUQ-aZB9CauaQvWHU&dib_tag=se&keywords=go+na+pratica&qid=1773256378&sprefix=%2Caps%2C200&sr=8-1";
+
 const navLinks = [
   { label: "Para quem é", href: "#audiencia" },
   { label: "Diferenciais", href: "#diferenciais" },
@@ -24,11 +27,10 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-dark-bg/95 backdrop-blur-lg shadow-lg border-b border-primary/10"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between h-16">
         <a href="#" className="text-primary-foreground font-bold text-xl tracking-tight">
@@ -37,7 +39,7 @@ const Navbar = () => {
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -53,7 +55,15 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="bg-accent text-accent-foreground px-5 py-2 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity"
           >
-            Comprar
+            UICLAP
+          </a>
+          <a
+            href={AMAZON_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-primary/30 text-primary px-5 py-2 rounded-lg font-semibold text-sm hover:bg-primary/10 transition-colors"
+          >
+            Amazon
           </a>
         </div>
 
@@ -91,7 +101,15 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="bg-accent text-accent-foreground px-5 py-2 rounded-lg font-semibold text-sm text-center"
             >
-              Comprar
+              Comprar na UICLAP
+            </a>
+            <a
+              href={AMAZON_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-primary/30 text-primary px-5 py-2 rounded-lg font-semibold text-sm text-center"
+            >
+              Comprar na Amazon
             </a>
           </div>
         </motion.div>

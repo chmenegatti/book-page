@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import bookMockup from "@/assets/book-mockup.png";
 
+const AMAZON_LINK =
+  "https://www.amazon.com.br/Go-Pr%C3%A1tica-Cap%C3%ADtulos-Dominar-Linguagem-ebook/dp/B0GQDC58N9/ref=sr_1_1?crid=363BEXSOAQRWU&dib=eyJ2IjoiMSJ9.H8NR6SKxnFk4cUAoh3Qt6di7HZQ6FPCSEWiCNYRDZn_GjHj071QN20LucGBJIEps.H1PeFbD6xXe1tb_oc_ZVKKYk9aLUQ-aZB9CauaQvWHU&dib_tag=se&keywords=go+na+pratica&qid=1773256378&sprefix=%2Caps%2C200&sr=8-1";
+
 const HeroSection = () => {
   return (
     <section className="section-dark relative min-h-screen flex items-center overflow-hidden pt-16">
@@ -52,23 +55,33 @@ const HeroSection = () => {
             {/* Price */}
             <div className="flex items-baseline gap-3 mb-8">
               <span className="text-primary-foreground/40 line-through text-lg">
-                R$ 116,00
+                R$ 92,84
               </span>
               <span className="text-4xl md:text-5xl font-extrabold text-primary-foreground">
-                R$ 72,50
+                R$ 73,50
               </span>
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://loja.uiclap.com/titulo/ua154446/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-accent text-accent-foreground px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all shadow-lg shadow-accent/30 text-center"
-              >
-                COMPRAR AGORA NA UICLAP
-              </a>
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://loja.uiclap.com/titulo/ua154446/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-accent text-accent-foreground px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all shadow-lg shadow-accent/30 text-center"
+                >
+                  COMPRAR AGORA NA UICLAP
+                </a>
+                <a
+                  href={AMAZON_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all text-center"
+                >
+                  COMPRAR NA AMAZON (KINDLE)
+                </a>
+              </div>
               <a
                 href="#sumario"
                 className="border border-primary/30 text-primary px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary/10 transition-all text-center flex items-center justify-center gap-2"

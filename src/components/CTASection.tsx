@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 
+const AMAZON_LINK =
+  "https://www.amazon.com.br/Go-Pr%C3%A1tica-Cap%C3%ADtulos-Dominar-Linguagem-ebook/dp/B0GQDC58N9/ref=sr_1_1?crid=363BEXSOAQRWU&dib=eyJ2IjoiMSJ9.H8NR6SKxnFk4cUAoh3Qt6di7HZQ6FPCSEWiCNYRDZn_GjHj071QN20LucGBJIEps.H1PeFbD6xXe1tb_oc_ZVKKYk9aLUQ-aZB9CauaQvWHU&dib_tag=se&keywords=go+na+pratica&qid=1773256378&sprefix=%2Caps%2C200&sr=8-1";
+
 const CTASection = () => {
   return (
     <section className="gradient-cta py-24 relative overflow-hidden">
@@ -24,25 +27,33 @@ const CTASection = () => {
 
           <div className="flex items-baseline justify-center gap-3 mb-6">
             <span className="text-primary-foreground/50 line-through text-lg">
-              R$ 116,00
+              R$ 92,84
             </span>
             <span className="text-5xl md:text-6xl font-extrabold text-primary-foreground">
-              R$ 72,50
+              R$ 73,50
             </span>
           </div>
 
           <div className="inline-flex bg-primary-foreground/20 text-primary-foreground rounded-full px-4 py-1.5 text-sm font-semibold mb-8">
-            Economize R$ 43,50
+            Economize R$ 19,34
           </div>
 
-          <div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="https://loja.uiclap.com/titulo/ua154446/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-accent text-accent-foreground px-10 py-5 rounded-2xl font-bold text-xl hover:opacity-90 transition-all shadow-xl shadow-accent/40 animate-pulse-glow"
+              className="inline-block w-full sm:w-auto bg-accent text-accent-foreground px-10 py-5 rounded-2xl font-bold text-xl hover:opacity-90 transition-all shadow-xl shadow-accent/40 animate-pulse-glow"
             >
               COMPRAR AGORA NA UICLAP
+            </a>
+            <a
+              href={AMAZON_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block w-full sm:w-auto bg-primary text-primary-foreground px-10 py-5 rounded-2xl font-bold text-xl hover:opacity-90 transition-all"
+            >
+              COMPRAR NA AMAZON (KINDLE)
             </a>
           </div>
 
