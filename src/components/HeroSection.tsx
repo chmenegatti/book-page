@@ -55,7 +55,7 @@ const HeroSection = () => {
                 R$ 116,00
               </span>
               <span className="text-4xl md:text-5xl font-extrabold text-primary-foreground">
-                R$ 92,00
+                R$ 72,50
               </span>
             </div>
 

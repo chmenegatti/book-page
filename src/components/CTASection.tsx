@@ -27,12 +27,12 @@ const CTASection = () => {
               R$ 116,00
             </span>
             <span className="text-5xl md:text-6xl font-extrabold text-primary-foreground">
-              R$ 92,00
+              R$ 72,50
             </span>
           </div>
 
           <div className="inline-flex bg-primary-foreground/20 text-primary-foreground rounded-full px-4 py-1.5 text-sm font-semibold mb-8">
-            Economize R$ 24,00
+            Economize R$ 43,50
           </div>
 
           <div>
