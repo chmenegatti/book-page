@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/go-na-pratica/(.*)", "destination": "/go-na-pratica/index.html" },
+    { "source": "/go-na-pratica", "destination": "/go-na-pratica/index.html" }
+  ]
+}
