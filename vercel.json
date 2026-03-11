@@ -1,6 +1,9 @@
 {
   "rewrites": [
-    { "source": "/go-na-pratica/(.*)", "destination": "/go-na-pratica/index.html" },
-    { "source": "/go-na-pratica", "destination": "/go-na-pratica/index.html" }
+    { "source": "/go-na-pratica/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/go-na-pratica/favicon.svg", "destination": "/favicon.svg" },
+    { "source": "/go-na-pratica/favicon.ico", "destination": "/favicon.ico" },
+    { "source": "/go-na-pratica", "destination": "/index.html" },
+    { "source": "/go-na-pratica/:path*", "destination": "/index.html" }
   ]
 }
