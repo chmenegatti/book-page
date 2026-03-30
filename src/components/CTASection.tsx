@@ -45,7 +45,7 @@ const CTASection = () => {
               rel="noopener noreferrer"
               className="inline-block w-full sm:w-auto bg-accent text-accent-foreground px-10 py-5 rounded-2xl font-bold text-xl hover:opacity-90 transition-all shadow-xl shadow-accent/40 animate-pulse-glow"
             >
-              COMPRAR AGORA NA UICLAP
+              COMPRAR AGORA NA UICLAP!
             </a>
             <a
               href={AMAZON_LINK}
