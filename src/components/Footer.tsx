@@ -19,7 +19,7 @@ const Footer = () => {
               Sobre o Autor
             </a>
             <a
-              href="https://loja.uiclap.com/titulo/ua154446/"
+              href="https://loja.uiclap.com/titulo/ua160621"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-foreground/50 hover:text-primary transition-colors"

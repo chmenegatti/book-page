@@ -66,7 +66,7 @@ const HeroSection = () => {
             <div className="flex flex-col gap-4">
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://loja.uiclap.com/titulo/ua154446/"
+                  href="https://loja.uiclap.com/titulo/ua160621"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-accent text-accent-foreground px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all shadow-lg shadow-accent/30 text-center"

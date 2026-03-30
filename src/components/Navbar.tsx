@@ -50,7 +50,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://loja.uiclap.com/titulo/ua154446/"
+            href="https://loja.uiclap.com/titulo/ua160621"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-accent text-accent-foreground px-5 py-2 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity"
@@ -96,7 +96,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="https://loja.uiclap.com/titulo/ua154446/"
+              href="https://loja.uiclap.com/titulo/ua160621"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-accent text-accent-foreground px-5 py-2 rounded-lg font-semibold text-sm text-center"

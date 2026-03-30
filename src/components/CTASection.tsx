@@ -40,7 +40,7 @@ const CTASection = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="https://loja.uiclap.com/titulo/ua154446/"
+              href="https://loja.uiclap.com/titulo/ua160621"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block w-full sm:w-auto bg-accent text-accent-foreground px-10 py-5 rounded-2xl font-bold text-xl hover:opacity-90 transition-all shadow-xl shadow-accent/40 animate-pulse-glow"
